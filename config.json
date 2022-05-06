@@ -165,8 +165,8 @@
                 "module": "rcmdSong",
                 /* 是否开启任务 */
                 "enable": true,
-                /* 要推荐的歌曲id，随机选取一个，如[65528, 64634] */
-                "songId": [],
+                /* 要推薦的歌曲id，隨機選取一個，如[65528, 64634] */
+                "songId": [65528],
                 /* 推荐的云贝数量 */
                 "yunbeiNum": 10,
                 /* 推荐理由，随机选取一个*/
@@ -181,7 +181,7 @@
                 "taskName": "发布Mlog",
                 "module": "publishMlog",
                 /* 是否开启任务 */
-                "enable": false,
+                "enable": ture,
                 /* 填写歌曲id，随机选取一个，如[65528, 64634] */
                 "songId": [],
                 /* 动态内容，随机选取一个，其中$artist会被替换为歌手名，$song会被替换为歌曲名 */
@@ -205,7 +205,7 @@
                 "taskName": "浏览会员中心",
                 "module": "visitVipCenter",
                 /* 是否开启任务 */
-                "enable": false
+                "enable": ture
             }
         },
         /* 音乐人任务，登录音乐人中心默认开启，其他按需开启 */
@@ -272,12 +272,12 @@
             "739008": {
                 "taskName": "观看课程",
                 "module": "watchCollegeLesson",
-                "enable": false
+                "enable": ture
             },
             "797005": {
                 "taskName": "访问自己的云圈",
                 "module": "visitMyCircle",
-                "enable": false,
+                "enable": ture,
                 /* 自己的云圈ID，可不填写，如果提示 resourceID 获取失败，则需要手动填写 */
                 /* 获取方式: 云圈右上角分享，链接中 circleId= 后得参数即为云圈 id */
                 "circleId": ""
@@ -287,7 +287,7 @@
                 "taskName": "发布mlog",
                 "module": "publishMlog",
                 /* 是否开启任务 */
-                "enable": false,
+                "enable": ture,
                 /* 填写歌曲id，随机选取一个，如[65528, 64634] */
                 "songId": [],
                 /* 动态内容，随机选取一个，其中$artist会被替换为歌手名，$song会被替换为歌曲名 */
@@ -306,7 +306,7 @@
             "816": {
                 "taskName": "创建共享歌单",
                 "module": "createSharedPlaylist",
-                "enable": false,
+                "enable": ture,
                 /* 自定义歌单名，用逗号隔开，随机选取一个 */
                 "name": [
                     "歌单",
@@ -318,13 +318,13 @@
             "824": {
                 "taskName": "浏览黑胶时光机",
                 "module": "vipTimeMachine",
-                "enable": false
+                "enable": ture
             }            
         },
         /* 打卡刷歌 */
         "daka": {
             /* 是否开启任务 */
-            "enable": false,
+            "enable": ture,
             /* 满级时自动停止 */
             "full_stop": true,
             /* 是否开启自动打卡，该模式下song_number和sleep_time参数将失效 */
