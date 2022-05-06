@@ -272,7 +272,7 @@
             "739008": {
                 "taskName": "观看课程",
                 "module": "watchCollegeLesson",
-                "enable": ture
+                "enable": false
             },
             "797005": {
                 "taskName": "访问自己的云圈",
@@ -306,7 +306,7 @@
             "816": {
                 "taskName": "创建共享歌单",
                 "module": "createSharedPlaylist",
-                "enable": ture,
+                "enable": false,
                 /* 自定义歌单名，用逗号隔开，随机选取一个 */
                 "name": [
                     "歌单",
@@ -318,7 +318,7 @@
             "824": {
                 "taskName": "浏览黑胶时光机",
                 "module": "vipTimeMachine",
-                "enable": ture
+                "enable": false
             }            
         },
         /* 打卡刷歌 */
