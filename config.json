@@ -181,7 +181,7 @@
                 "taskName": "发布Mlog",
                 "module": "publishMlog",
                 /* 是否开启任务 */
-                "enable": false,
+                "enable": true,
                 /* 填写歌曲id，随机选取一个，如[65528, 64634] */
                 "songId": [],
                 /* 动态内容，随机选取一个，其中$artist会被替换为歌手名，$song会被替换为歌曲名 */
@@ -272,7 +272,7 @@
             "739008": {
                 "taskName": "观看课程",
                 "module": "watchCollegeLesson",
-                "enable": false
+                "enable": true
             },
             "797005": {
                 "taskName": "访问自己的云圈",
@@ -287,7 +287,7 @@
                 "taskName": "发布mlog",
                 "module": "publishMlog",
                 /* 是否开启任务 */
-                "enable": false,
+                "enable": true,
                 /* 填写歌曲id，随机选取一个，如[65528, 64634] */
                 "songId": [],
                 /* 动态内容，随机选取一个，其中$artist会被替换为歌手名，$song会被替换为歌曲名 */
