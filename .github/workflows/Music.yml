@@ -10,7 +10,14 @@ on:
 
 jobs:
   run:
-  run-it:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: 'setup python'
+        uses: actions/setup-python@master
+        with: 
+          python-version: 3.7
+          
     runs-on: ubuntu-18.04
     name: Run it on action
     steps:
@@ -20,7 +27,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '7.3'
-
+          
       - name: requirements
         run : pip3 install -r requirements.txt
       
