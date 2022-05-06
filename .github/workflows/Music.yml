@@ -23,7 +23,7 @@ jobs:
       
       - name: Setting
         run: |
-        cp config.example.json config.json
+      
         
           if [ '${{ secrets.username }}' != '' ]; then sed -i "s/^username=.*$/username='${{ secrets.username }}'/" config.json; fi
           if [ '${{ secrets.password }}' != '' ]; then sed -i "s/^password=.*$/password='${{ secrets.password }}'/" config.json; fi
