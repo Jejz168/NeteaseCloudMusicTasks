@@ -3,7 +3,7 @@ name: 'Music'
 on:
   push:
     branches:
-      - main
+    - main
   schedule:
     - cron: '30 */8 * * *'
   workflow_dispatch:
