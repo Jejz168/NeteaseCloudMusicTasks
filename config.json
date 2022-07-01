@@ -14,7 +14,7 @@
             /* 若都填写了账号密码和 cookie，会优先使用 cookie */
             /* cookie 失效后才会使用账号密码登录 */
             /* 填写方式详见 https://github.com/chen310/NeteaseCloudMusicTasks#%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81 */
-            "cookie": "",
+            "cookie": "_ntes_nnid=fd3632c8d112c04b9e606b4d47bb45f3,1656661318816; _ntes_nuid=fd3632c8d112c04b9e606b4d47bb45f3; NMTID=00O0UiK6dA5OtuHGUDqi8eXLZDdG60AAAGBuLWdyA; JSESSIONID-WYYY=zoN%2FvmmtUU%5CngrPiXlq0l8Q%2BhQpujD1R9hSS7zN2gs278R%2B3GqfrQGBFph1mAS%2FStfu4DqStGgXCfhkZFvHS74%5CwvDYJkKb%2BJuCUoBDJJl3hFY5hrrrgaPA808epXWEUCYX1MC0nVx%2FwrIFx6TMADFDZkldx7eV%2FbrjY3l8a3FUbrTI3%3A1656663122832; _iuqxldmzr_=33; WM_TID=a54EWGcexU1AEQVQRBLFV34HbtlT1hDu; WM_NI=5ujRgzrX3PDQr7dlf6%2BsXzSlk7jTJW3cPpwH1MXCy0LGOHkwnxp7OSZQltLNuZgNGIpG41GStOt9jFrZD5MTj5pedVB1UxwGtIKqK6%2F%2BOw0QYW0PuC1LiSgMBGG8Z4ceVXY%3D; WM_NIKE=9ca17ae2e6ffcda170e2e6ee83eb5381ef87d9ee6492b48fb3c55a878a8e83c85ff7aa8b9bb26b8bf19b97e62af0fea7c3b92af7aba6b3e672b288fdb1c75bb2e9ac8de53ee9ad989bd268a9e9a6b5c95df1bda091f644f39398a4fc3c909981a9ea7daea8c0d8ce599a8fa495cf46b786a9afc643b499fcd2c659b891bcdae94eb2868cd6d060aaebc086e75e82ef9b99f64db8978592ca3eedf58198b35b9b8900b1f849f394a7b4e647829989d9d940a1bb9ab9dc37e2a3; __csrf=ee2519acad3e3fb22110f2543ba1b6e4; MUSIC_U=3e9c6f84c95ef452b50d3e43359ef5663cec8844e8765c02534b6853a1862c7c993166e004087dd3321554d110b33364f6d07d3d3d219b05a1a96609faf26e911ed898b70512df83d4dbf082a8813684; ntes_kaola_ad=1",
             /* 填写国内IP，否则可能会有无法登录等问题出现，多个账号最好设置不同的IP */
             /* 可填写本机IP，查看方法：https://www.ip138.com/ 填写显示的ip即可 */
             "X-Real-IP": "",
