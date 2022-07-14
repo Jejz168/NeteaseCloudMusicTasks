@@ -7,7 +7,11 @@ on:
   schedule:
     - cron: '30 04 * * *'
   workflow_dispatch:
-
+env:
+  USERNAME: ${{ secrets.USERNAME }}
+  PASSWORD: ${{ secrets.PASSWORD }}
+  COOKIE: ${{ secrets.COOKIE }}
+  
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -19,10 +23,11 @@ jobs:
           python-version: 3.7
       - name: Setting
         run: |
-          if [ '${{ secrets.USERNAME }}' != '' ]; then sed -i 's/"username": ""/"username": ""${{ secrets.USERNAME }}""/' config.json; fi
-          if [ '${{ secrets.PASSWORD }}' != '' ]; then sed -i 's/"password": ""/"username": ""${{ secrets.PASSWORD }}""/' config.json; fi
-          if [ '${{ secrets.COOKIE }}' != '' ]; then sed -i 's/"cookie": ""/"cookie": ""${{ secrets.COOKIE }}""/' config.json; fi
-
+          cat>config.json<<-\EOF
+            "username": "$USERNAME"
+            "password": "$PASSWORD"
+            "cookie": "$COOKIE"
+          EOF
       - name: requirements
         run : pip3 install -r requirements.txt
       
