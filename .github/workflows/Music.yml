@@ -19,9 +19,9 @@ jobs:
           python-version: 3.7
       - name: Setting
         run: |
-          if [ '${{ secrets.USERNAME }}' != '' ]; then sed -i 's/"username": /"username": "${{ secrets.USERNAME }}"/' config.json; fi
-          if [ '${{ secrets.PASSWORD }}' != '' ]; then sed -i 's/"password": /"username": "${{ secrets.PASSWORD }}"/' config.json; fi
-          if [ '${{ secrets.COOKIE }}' != '' ]; then sed -i 's/"cookie": /"cookie": "${{ secrets.MULTIPLE_ACCOUNTS }}"/' config.json; fi
+          if [ '${{ secrets.USERNAME }}' != '' ]; then sed -i 's/"username": ""/"username": "'${{ secrets.USERNAME }}'"/' config.json; fi
+          if [ '${{ secrets.PASSWORD }}' != '' ]; then sed -i 's/"password": ""/"username": "'${{ secrets.PASSWORD }}'"/' config.json; fi
+          if [ '${{ secrets.COOKIE }}' != '' ]; then sed -i 's/"cookie": ""/"cookie": "'${{ secrets.COOKIE }}'"/' config.json; fi
 
       - name: requirements
         run : pip3 install -r requirements.txt
