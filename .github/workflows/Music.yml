@@ -27,7 +27,7 @@ jobs:
       - name: Setting
         run: |
           sed -i 's/"username": ""/"username": "${{ secrets.USERNAME }}"/g' config.json
-          sed -i 's/"password": ""/"password": "${{ secrets.PASSWORD }}/g' config.json
+          sed -i 's/"password": ""/"password": "${{ secrets.PASSWORD }}"/g' config.json
           sed -i 's/"cookie": ""/"cookie": "${{ secrets.COOKIE }}"/g' config.json
         
       - name: 网易云音乐
