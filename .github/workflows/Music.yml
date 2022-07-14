@@ -21,16 +21,15 @@ jobs:
         uses: actions/setup-python@master
         with: 
           python-version: 3.7
-      - name: Setting
-        run: |
-          cat>config.json<<-\EOF
-            "username": "$USERNAME"
-            "password": "$PASSWORD"
-            "cookie": "$COOKIE"
-          EOF
       - name: requirements
         run : pip3 install -r requirements.txt
-      
+        
+      - name: Setting
+        run: |
+          sed -i 's/"username": ""/"username": "$USERNAME"/g' config.json
+          sed -i 's/"password": ""/"password": "$PASSWORD/g' config.json
+          sed -i 's/"cookie": ""/"cookie": "$COOKIE"/g' config.json
+        
       - name: 网易云音乐
         run: |
           python3 index.py
